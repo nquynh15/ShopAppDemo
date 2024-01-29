@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-//http://localhost:8080/api/v1/orders ${api.prefix}
-@RequestMapping("api/v1/orders")
+//http://localhost:8080/api/v1/orders
+@RequestMapping("${api.prefix}/orders")
 public class OrderController {
 
     @PostMapping("")
